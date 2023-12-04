@@ -1,1 +1,4 @@
-# For the backend, you have to first manuelly create the database 
+
+* refresh tokens not included yet
+
+* frontend not included yet

@@ -1,0 +1,51 @@
+
+# TODO: EDIT THIS FILE, AND CHANGE THE FILE NAME TO .env
+
+NODE_ENV = ""
+PORT_EXPRESS = 3000
+
+#sql stuff ##################################
+SQL_HOST = ""
+SQL_USER = ""
+SQL_PASS = ""
+SQL_DATABASE = ""
+TABLE_1 = "table_1"
+TABLE_2 = "table_2"
+
+# sql usefull variables #############################################################################
+DEFAULT_VAL = "Not available"
+DEFAULT_VAL_CURRENCY = "USD"
+DELETE_KEY_FOR_PRODUCTS = "" # product records can only be deleted with this key
+DELETE_KEY_FOR_USERS = "" # users records can only be deleted with this key
+
+
+# absolute path to your csv files within the directory, e.g: "C:/WORK/PROJECTS/TEST.csv"
+CSV_PRODS = ""
+CSV_USERS = ""
+
+
+# others ########################################################
+ALGORITHM = "RS256"
+
+accessTokenExpireIn = 7 # access token expires in 7 hours 
+
+refreshTokenExpireIn = 7 # refresh token expires in 7 days 
+
+sessionCookieExpiresIn = 14 # session cookie will expire in 14 days
+
+# TODO: GENERATE YOUR OWN KEYS
+# access token keys ############################################
+JWT_PRIVATE_KEY_ACCESS =""
+
+
+JWT_PUBLIC_KEY_ACCESS = ""
+
+
+# refresh token keys ############################################
+JWT_PRIVATE_KEY_REFRESH = ""
+
+
+JWT_PUBLIC_KEY_REFRESH = ""
+
+
+SESSION_KEY= ""
