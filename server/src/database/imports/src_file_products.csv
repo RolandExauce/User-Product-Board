@@ -1,0 +1,20 @@
+_id,psNumber,productType,categoryCode,brandCode,familyCode,lineCode,status,value,valueCurrency,name,sourceLink
+efa5d455-d153-4ff0,PS-PL-C167,PRODUCT,Pedestrian Lighting,Public Sector,Cobra Head,City,ACTIVE,1250.0000,USD,Cobra Head 100W HPS,http://lighttree.com/PS-PL-C167
+9b5df6cf-e5d5-4558,PS-PL-C295,PRODUCT,Pedestrian Lighting,Public Sector,Cobra Head,City,ACTIVE,1250.0000,USD,Cobra Head 150W HPS 30,http://lighttree.com/PS-PL-C295
+765870db-d24a-41e7,PS-PL-S459,PRODUCT,Pedestrian Lighting,Public Sector,Stad,City,ACTIVE,1250.0000,USD,Stad Twin 250W 30' Teardrop Lumi,http://lighttree.com/PS-PL-S459
+0c7a8d2b-631d-4b1d,PS-SL-A123,PRODUCT,Street Lighting,Public Sector,Bishops Crook,City,ACTIVE,1250.0000,USD,Bishops Crook IES Type III,http://lighttree.com/PS-SL-A123
+33a27876-eb70-4bca,PS-SL-A287,PRODUCT,Street Lighting,Public Sector,Alliance,Rural,ACTIVE,1250.0000,USD,Alliance 150W HPS 25,http://lighttree.com/PS-SL-A287
+f1b2476c-cd6a-429e,PS-SL-A288,PRODUCT,Street Lighting,Public Sector,Alliance,Rural,ACTIVE,1250.0000,USD,Alliance 100W HPS 25,http://lighttree.com/PS-SL-A288
+c0f79024-a871-4c6c,PS-SL-B122,PRODUCT,Street Lighting,Public Sector,Bishops Crook,City,ACTIVE,1250.0000,USD,Bishops Crook 250W HPS,http://lighttree.com/PS-SL-B122
+4535a648-54b4-4c52,PS-SL-C193,PRODUCT,Street Lighting,Public Sector,City Light,City,ACTIVE,1250.0000,USD,City Light 100W HPS 30,http://lighttree.com/PS-SL-C193
+d958c1fd-42f4-42c8,PS-SL-C280,PRODUCT,Street Lighting,Public Sector,City Light,City,ACTIVE,1250.0000,USD,City Light 150W HPS 30,http://lighttree.com/PS-SL-C280
+ada5704d-062d-4f8b,PS-SL-F342,PRODUCT,Street Lighting,Public Sector,Flatbush Avenue,City,ACTIVE,1250.0000,USD,Flatbush Avenue Twin 450W,http://lighttree.com/PS-SL-F342
+7a92b521-7f1b-46b5,PS-SL-F343,PRODUCT,Street Lighting,Public Sector,Flatbush Avenue,City,ACTIVE,1250.0000,USD,Flatbush Avenue Single 350W,http://lighttree.com/PS-SL-F343
+c25004ee-c099-4b02,PS-SL-F344,PRODUCT,Street Lighting,Public Sector,Flatbush Avenue,City,ACTIVE,1250.0000,USD,Flatbush Avenue Twin 250W,http://lighttree.com/PS-SL-F344
+3871c46f-d92c-4799,PS-SL-F345,PRODUCT,Street Lighting,Public Sector,Flatbush Avenue,City,ACTIVE,1250.0000,USD,Flatbush Avenue Single 250W,http://lighttree.com/PS-SL-F345
+e6a5f300-5373-4c27,PS-SL-H309,PRODUCT,Street Lighting,Public Sector,Helm,Rural,ACTIVE,1250.0000,USD,Helm 150W HPS 30,http://lighttree.com/PS-SL-H309
+9645bec7-bcc5-4865,PS-SL-H310,PRODUCT,Street Lighting,Public Sector,Helm,Rural,ACTIVE,1250.0000,USD,Helm 100W HPS 30,http://lighttree.com/PS-SL-H310
+3ab6f0fd-efab-474d,PS-SL-INFO,PRODUCT,Street Lighting,Public Sector,All,City,INACTIVE,0.0000,USD,Public Sector Street Dark,http://lighttree.com/PS-SL-INFO
+074400d0-8f50-4341,PS-SL-KIT,PRODUCT,Street Lighting,Public Sector,All,City,ACTIVE,0.0000,USD,Public Sector Street Lighting,http://lighttree.com/PS-SL-KIT
+fb9c74d2-d711-4fd7,PS-SL-L327,PRODUCT,Street Lighting,Public Sector,LED Type E,City,ACTIVE,1250.0000,USD,LED Type E Twin 250W,http://lighttree.com/PS-SL-L327
+aac1f553-4142-464c,PS-SL-L393,PRODUCT,Street Lighting,Public Sector,LED Type E,City,ACTIVE,1250.0000,USD,LED Type E Single 250W,http://lighttree.com/PS-SL-L393

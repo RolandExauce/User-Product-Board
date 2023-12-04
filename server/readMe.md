@@ -1,0 +1,1 @@
+# For the backend, you have to first manuelly create the database 
