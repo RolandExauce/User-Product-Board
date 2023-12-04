@@ -1,4 +1,3 @@
-import { Pool } from "mysql2/promise";
 import { IProduct, IUser, configDB } from "../tools/types";
 import { SQL_DATABASE, SQL_HOST, SQL_PASS, SQL_USER } from "../tools/envs";
 import mysql, { RowDataPacket } from "mysql2";
@@ -14,7 +13,7 @@ import {
 } from "./_init.statements";
 
 // Initialize the database connection pool
-const initPool = async (): Promise<Pool | undefined> => {
+const initPool = async () => {
   try {
     const config: configDB = {
       host: SQL_HOST,
@@ -37,7 +36,7 @@ const initPool = async (): Promise<Pool | undefined> => {
 };
 
 // Initialize the database and create necessary tables
-const initDB = async (): Promise<void> => {
+const initDB = async () => {
   const pool = await initPool();
   if (pool) {
     console.log("Connected to SQL Database");

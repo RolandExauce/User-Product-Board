@@ -37,6 +37,6 @@ export const controllerUpdateUser = async (req: Request, res: Response) => {
   if (updateResult.__typename === "Success") {
     res.status(200).send(updateResult.result);
   } else {
-    res.status(204).send(updateResult.error);
+    res.status(404).send(updateResult.error);
   }
 };

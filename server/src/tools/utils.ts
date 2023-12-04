@@ -1,7 +1,5 @@
 import jwt from "jsonwebtoken";
 import {
-  IProdNoCurrencyNoID,
-  IUser,
   RecordWithStringOrNumber,
   SqlOperationResult,
 } from "./types";
@@ -62,6 +60,7 @@ const opResult = (passRow: SqlOperationResult): number => {
   return Object(iterArr[1]).affectedRows as number;
 };
 
+//check wether ressource has been modified or not 
 const evalRecordOnUpdate = <T extends RecordWithStringOrNumber>(
   record: T,
   initArr: readonly Exclude<keyof T, symbol>[] // Exclude symbol type

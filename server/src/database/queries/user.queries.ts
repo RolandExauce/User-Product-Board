@@ -200,13 +200,14 @@ const updateUser = async (
     );
 
     const UPDATE_VALUES = [
-      updatedValues.email,
       updatedValues.lastName,
       updatedValues.firstName,
       updatedValues.userName,
+      updatedValues.email,
       updatedValues.department,
       updatedValues.role,
       updatedValues.jobRole,
+      emailOfUserToUpdate,
     ];
 
     //only update if values are modified

@@ -15,14 +15,11 @@ const NO_UPDATE_WHERE_PARAM = (updateType: Entity) =>
     updateType === "USER" ? "USER" : "PRODUCT"
   }`;
 
-
-
 //err msg when deleting user or product, if key, id or psNumber missing
-const missingIdOrPsAndDelKey = (deleteType: Entity) => {
-  return `BOTH ${
+const missingIdOrPsAndDelKey = (deleteType: Entity) =>
+  `BOTH ${
     deleteType === "PRODUCT" ? "PS-NUMBER" : "ID"
   } AND DELETE KEY HAS TO BE PROVIDED TO DELETE A ${deleteType}!`;
-};
 
 const NO_SEARCH_PARAMS_PROD = `NO SEARCH PARAMETERS PROVIDED, YOU SHOULD ATLEAST PROVIDE THE PRODUCT'S NAME!`;
 const NO_DELETE_PARAMS_PROD = `TO DELETE A PRODUCT, YOU MUST PASS THE PS NUMBER AND THE DELETE KEY`;
@@ -43,6 +40,17 @@ const OP_MSG_ON_PRODUCT = (psNumber: string, op: string) => {
     return `PRODUCT WITH PS NUMBER: ${psNumber} WAS CREATED SUCCESSFULLY`;
   else return "NO OPERATION DETECTED"; //if everything else fails
 };
+
+const OP_MSG_ON_USER = (op: string, email: string) => {
+  if (op === "DELETE")
+    return `USER WITH THE ID: ${email} WAS DELETED SUCCESSFULLY`;
+  if (op === "UPDATE")
+    return `USER WITH THE EMAIL: ${email} WAS UPDATED SUCCESSFULLY`;
+  if (op === "CREATE")
+    return `USER WITH THE EMAIL: "${email}" WAS CREATED SUCCESSFULLY`;
+  else return "NO OPERATION DETECTED"; //if everything else fails
+};
+
 /*FOR USERS QUERIES *****************************************************************************************/
 const ALREADY_LOGGED_OUT = `TOKEN EXPIRED OR USER IS LOGGED OUT`;
 const MISSING_CREDENTIALS = `MISSING CREDENTIALS, CHECK IF BOTH USERNAME AND PASSWORD WERE PROVIDED`;
@@ -50,11 +58,10 @@ const USER_NOT_FOUND_ON_LOGIN = "SORRY, BUT THIS USER DOESN'T EXIST";
 const WRONG_PASSWORD_ON_LOGIN = "NO USER WITH THIS PASSWORD EXISTS";
 
 //when searching user or product
-const missingSearchParams = (searchType: Entity) => {
-  return `NO SEARCH PARAMETERS, PROVIDE ATLEAST THE ${
+const missingSearchParams = (searchType: Entity) =>
+  `NO SEARCH PARAMETERS, PROVIDE ATLEAST THE ${
     searchType === "PRODUCT" ? "PRODUCT'S NAME" : "USER'S ID"
   } OR THE  ${searchType === "PRODUCT" ? "PS-NUMBER" : " USER'S LASTNAME"}`;
-};
 
 const NO_USER_FOUND = `ERROR, USER WAS NOT FOUND!`;
 const NO_DELETE_PARAMS_USER = `TO DELETE A USER, YOU MUST PASS THE ID AND THE DELETE KEY`;
@@ -66,20 +73,9 @@ const FORBIDDEN_REQUEST = `YOU ARE NOT AUTHORIZED TO MAKE THIS REQUEST!`;
 const VALUES_MISSING_CANNOT_CREATE = (
   createdType: Entity,
   ...args: (string | number)[]
-) => {
+) =>
   //when creating user or products and if arguments are missing
-  return `CREATING ${createdType} FAILED, MISSING: ${args.toString()}`; //missing arguments comes as array, convert them
-};
-
-const OP_MSG_ON_USER = (op: string, idOrEmail: string) => {
-  if (op === "DELETE")
-    return `USER WITH THE ID: ${idOrEmail} WAS DELETED SUCCESSFULLY`;
-  if (op === "UPDATE")
-    return `USER WITH THE EMAIL: ${idOrEmail} WAS UPDATED SUCCESSFULLY`;
-  if (op === "CREATE")
-    return `USER WITH THE EMAIL: "${idOrEmail}" WAS CREATED SUCCESSFULLY`;
-  else return "NO OPERATION DETECTED"; //if everything else fails
-};
+  `CREATING ${createdType} FAILED, MISSING: ${args.toString()}`; //missing arguments comes as array, convert them
 
 // Define an error handler for unmatched routes
 const handleInvalidRoute = (req: Request, res: Response) => {
